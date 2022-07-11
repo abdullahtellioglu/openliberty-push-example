@@ -1,0 +1,10 @@
+<server description="Open Liberty server">
+
+    <featureManager>
+        <feature>servlet-4.0</feature>
+    </featureManager>
+
+    <webApplication location="open-liberty-push-1.0.war" contextRoot="/push"/>
+    <httpEndpoint host="*" httpPort="${default.http.port}" httpsPort="${default.https.port}"
+                  id="defaultHttpEndpoint"/>
+</server>
